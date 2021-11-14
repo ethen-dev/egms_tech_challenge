@@ -1,27 +1,25 @@
 import './App.css';
-import { Routes, Route, Link } from "react-router-dom";
-import { Home } from '../views/Home';
-import { Games } from '../views/Games';
-import { Developers } from '../views/Developers';
-import { Streaming } from '../views/Streaming';
+import { Routes, Route } from "react-router-dom";
+import { navigationItems } from './navigationData';
+import { Header } from './Header';
 
 function App() {
     return (
-    <div className="App">
-        <header className="App-header">
-            <Link to="/">Home</Link>
-            <Link to="games">Games</Link>
-            <Link to="developes">Developers</Link>
-            <Link to="streaming">Streaming</Link>
-        </header>
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/games" element={<Games />} />
-            <Route path="/developes" element={<Developers />} />
-            <Route path="/streaming" element={<Streaming />} />
-        </Routes>
-    </div>
-  );
+        <div className="App">
+            <Header />
+            <Routes>
+                {
+                    navigationItems.map((item, i) => (
+                        <Route 
+                            key={i}
+                            path={`/${item.path}`} 
+                            element={item.element} 
+                        />
+                    ))
+                }
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
