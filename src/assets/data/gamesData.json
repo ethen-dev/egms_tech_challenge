@@ -1,0 +1,78 @@
+[
+    {
+        "img": "solitaire",
+        "name": "Solitaire",
+        "description": "The classic solitaire game!",
+        "tags": [
+            "cards"
+        ],
+        "platforms": [
+            "ios", 
+            "android"
+        ]
+    },
+
+    {
+        "img": "21jack",
+        "name": "21 Jack",
+        "description": "Join 21 and win!",
+        "tags": [
+            "cards"
+        ],
+        "platforms": [
+            "ios",
+            "android"
+        ]
+    },
+
+    {
+        "img": "bowling",
+        "name": "Bowling",
+        "description": "Enjoy virtual bowling by challenging your friend!",
+        "tags": [
+            "sport"
+        ],
+        "platforms": [
+            "ios",
+            "android"
+        ]
+    },
+
+    {
+        "img": "dominoes",
+        "name": "Dominoes Royale",
+        "description": "Classic domino game with cash prizes!",
+        "tags": [
+            "board"
+        ],
+        "platforms": [
+            "ios"
+        ]
+    },
+
+    {
+        "img": "ball-po0l",
+        "name": "Ball Pool",
+        "description": "Fun Billiard Game!",
+        "tags": [
+            "sport"
+        ],
+        "platforms": [
+            "ios",
+            "android"
+        ]
+    },
+
+    {
+        "img": "chess-stars",
+        "name": "Chess Stars",
+        "description": "Boast your chess skills. Checkmate to win prizes.",
+        "tags": [
+            "board"
+        ],
+        "platforms": [
+            "ios",
+            "android"
+        ]
+    }
+]
