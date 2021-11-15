@@ -1,4 +1,3 @@
-import './App.css';
 import { Routes, Route } from "react-router-dom";
 import { navigationItems } from './navigationData';
 import { Header } from './Header';

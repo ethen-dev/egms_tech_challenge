@@ -1,3 +1,4 @@
+import './Header.css';
 import logo from '../../assets/logo.png';
 import { navigationItems } from '../navigationData';
 import { Link, useLocation } from "react-router-dom";
