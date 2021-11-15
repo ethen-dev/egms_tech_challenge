@@ -14,6 +14,6 @@ export const gamesStoreSlice = createSlice({
     }
 })
 
-export const { setGameList} = gamesStoreSlice.actions;
+export const { setGameList } = gamesStoreSlice.actions;
 
 export default gamesStoreSlice.reducer;
