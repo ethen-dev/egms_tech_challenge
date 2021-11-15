@@ -6,8 +6,8 @@ export const Header = () => {
     const location = useLocation();
     const getActiveClass = (path, routePath) => {
         return (path === routePath.pathname) ? 
-        'App-header__menu-element--active' : 
-        '';
+        'App-header__menu-element App-header__menu-element--active' : 
+        'App-header__menu-element';
     }
 
     return (
@@ -22,7 +22,7 @@ export const Header = () => {
                     navigationItems.map((item, i) => (
                         <li
                             key={i}
-                            className={`App-header__menu-element ${getActiveClass(item.path, location)}`}
+                            className={getActiveClass(item.path, location)}
                         >
                             <Link to={item.path}>
                                 {item.name}
