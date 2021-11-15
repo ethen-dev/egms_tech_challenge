@@ -16,15 +16,13 @@
         border-radius: 0.5em;
         overflow: hidden;
 
-        &-element {
-            padding: 0.5em 2em;
-            background-color: var(--primary);
-            cursor: pointer;
-
+        &-element { 
             a {
+                padding: 1em 2em;
                 color: var(--white);
                 font-weight: 500;
                 user-select: none;
+                background-color: var(--primary);
             }
 
             &--active {

@@ -27,19 +27,15 @@
   overflow: hidden;
 }
 
-.App-header__menu-element {
-  padding: 0.5em 2em;
-  background-color: var(--primary);
-  cursor: pointer;
-}
-
 .App-header__menu-element a {
+  padding: 1em 2em;
   color: var(--white);
   font-weight: 500;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-color: var(--primary);
 }
 
 .App-header__menu-element--active {
