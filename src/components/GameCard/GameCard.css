@@ -1,0 +1,67 @@
+.game-card {
+  width: 100%;
+  min-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--black);
+  border-radius: 0.5em;
+}
+
+.game-card__image {
+  height: 5em;
+}
+
+.game-card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1em;
+}
+
+.game-card__body-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.game-card__body-category {
+  font-weight: 500;
+}
+
+.game-card__body-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.2em;
+}
+
+.game-card__platform-image {
+  margin-left: 0.5em;
+  margin-top: 0.1em;
+  height: 0.8em;
+}
+
+.game-card__platform-image.ios {
+  height: 1em;
+  margin-top: 0.2em;
+}
+
+.game-card__download-btn {
+  height: 3em;
+  margin-left: auto;
+  margin-right: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=GameCard.css.map */

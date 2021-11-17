@@ -1,0 +1,56 @@
+.game-card {
+    $mainClass: &;
+
+    width: 100%;
+    min-width: 650px;
+    display: flex;
+    align-items: center;
+    padding: 0.6em 0.8em;
+    border: 1px solid var(--black);
+    border-radius: 0.5em;
+
+    &__image {
+        height: 5em;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em;
+
+        &-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        &-category {
+            font-weight: 500;
+        }
+
+        &-footer {
+            display: flex;
+            align-items: center;
+            margin-top: 0.2em;
+        }
+    }
+    
+    &__platform-image {
+        margin-left: 0.5em;
+        margin-top: 0.1em;
+        height: 0.8em;
+
+        &.ios {
+            height: 1em;
+            margin-top: 0.2em;
+        }
+    }
+    
+    
+    &__download-btn {
+        height: 3em;
+        margin-left: auto;
+        margin-right: 1em;
+        border-radius: 0.3em;
+        cursor: pointer;
+    }
+}

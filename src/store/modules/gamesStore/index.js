@@ -8,8 +8,8 @@ export const gamesStoreSlice = createSlice({
     name: 'gamesStore',
     initialState: getInitialState(),
     reducers: {
-        setGameList: (state, action) => {
-            state.gameList = action.payload;
+        setGameList: (state, { payload }) => {
+            state.gameList = Array.from(payload);            
         }
     }
 })
