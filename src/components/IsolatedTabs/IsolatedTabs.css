@@ -1,0 +1,21 @@
+.isolated-tabs {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.isolated-tabs__tab {
+  color: white;
+  padding: 0.7em;
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+.isolated-tabs__tab:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+/*# sourceMappingURL=IsolatedTabs.css.map */

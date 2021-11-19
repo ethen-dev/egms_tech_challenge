@@ -1,3 +1,25 @@
+.games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.games .isolated-tabs {
+  margin-top: 1em;
+}
+
+.games__search {
+  padding: 0.5em;
+  margin-top: 2em;
+}
+
 .games__list {
   list-style: none;
 }

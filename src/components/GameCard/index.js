@@ -4,7 +4,7 @@ import appleLogo from '../../assets/icon-apple.png';
 import androidLogo from '../../assets/icon-android.png';
 
 export const GameCard = ({game}) => {
-    const getLogoImg = (platform) => (platform === 'ios' ? appleLogo : androidLogo);
+    const getPlatformImg = (platform) => (platform === 'ios' ? appleLogo : androidLogo);
 
     return (
         <div className="game-card">
@@ -29,7 +29,7 @@ export const GameCard = ({game}) => {
                             <img 
                                 className={`game-card__platform-image ${platform}`}
                                 key={platform}
-                                src={getLogoImg(platform)} 
+                                src={getPlatformImg(platform)} 
                                 alt={platform} 
                             />
                         ))

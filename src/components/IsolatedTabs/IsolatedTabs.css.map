@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,KAAK;EACpB,QAAQ,EAAE,MAAM;CAYnB;;AAVI,AAAD,mBAAM,CAAC;EACH,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,OAAO;EACf,gBAAgB,EAAE,cAAc;CAKnC;;AATA,AAMG,mBANE,AAMD,MAAM,CAAC;EACJ,MAAM,EAAE,eAAe;CAC1B",
+    "sources": [
+        "IsolatedTabs.scss"
+    ],
+    "names": [],
+    "file": "IsolatedTabs.css"
+}

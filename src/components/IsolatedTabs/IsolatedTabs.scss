@@ -1,0 +1,17 @@
+.isolated-tabs {
+    list-style: none;
+    display: flex;
+    border-radius: 0.5em;
+    overflow: hidden;
+
+    &__tab {
+        color: white;
+        padding: 0.7em;
+        cursor: pointer;
+        background-color: var(--primary);
+
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+}
