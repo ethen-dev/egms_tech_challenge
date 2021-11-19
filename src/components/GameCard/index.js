@@ -3,11 +3,14 @@ import downloadImg from '../../assets/icon-download.png';
 import appleLogo from '../../assets/icon-apple.png';
 import androidLogo from '../../assets/icon-android.png';
 
-export const GameCard = ({game}) => {
+export const GameCard = ({ game, ...rootDOMAttributes }) => {
     const getPlatformImg = (platform) => (platform === 'ios' ? appleLogo : androidLogo);
 
     return (
-        <div className="game-card">
+        <div 
+            {...rootDOMAttributes}
+            className="game-card"
+        >
             <img 
                 className="game-card__image"
                 src={`${process.env.PUBLIC_URL}/assets/icon-${game.img}.png`} 

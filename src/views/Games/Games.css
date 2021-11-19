@@ -15,8 +15,7 @@
   margin-top: 1em;
 }
 
-.games__search {
-  padding: 0.5em;
+.games .custom-input {
   margin-top: 2em;
 }
 

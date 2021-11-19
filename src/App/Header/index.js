@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export const Header = () => {
     const location = useLocation();
+    const menuItems = navigationItems.filter(item => item.onMenu);
     const getActiveClass = (path, routePath) => {
         return (path === routePath.pathname) ? 
         'App-header__menu-element App-header__menu-element--active' : 
@@ -20,7 +21,7 @@ export const Header = () => {
             />
             <ul className="App-header__menu">
                 {
-                    navigationItems.map((item, i) => (
+                    menuItems.map((item, i) => (
                         <li
                             key={i}
                             className={getActiveClass(item.path, location)}

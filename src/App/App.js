@@ -7,6 +7,7 @@ import { navigationItems } from './navigationData';
 import { APIService } from '../services/API';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { UnderConstruction } from '../views/UnderConstruction';
 
 function App() {
     const dispatch = useDispatch();
@@ -30,6 +31,7 @@ function App() {
                         />
                     ))
                 }
+                <Route path="*" element={<UnderConstruction />} />
             </Routes>
             <Footer />
         </div>
