@@ -3,20 +3,21 @@ import downloadImg from '../../assets/icon-download.png';
 import appleLogo from '../../assets/icon-apple.png';
 import androidLogo from '../../assets/icon-android.png';
 
-export const GameCard = ({ game, ...rootDOMAttributes }) => {
+export const GameCard = ({ game, onDownloadClick, onGameClick }) => {
     const getPlatformImg = (platform) => (platform === 'ios' ? appleLogo : androidLogo);
 
     return (
-        <div 
-            {...rootDOMAttributes}
-            className="game-card"
-        >
+        <div className="game-card">
             <img 
+                onClick={() => onGameClick(game.name)}
                 className="game-card__image"
                 src={`${process.env.PUBLIC_URL}/assets/icon-${game.img}.png`} 
                 alt={game.name} 
             />
-            <div className="game-card__body">
+            <div 
+                onClick={() => onGameClick(game.name)}
+                className="game-card__body"
+            >
                 <span className="game-card__body-title">
                     {game.name}
                 </span>
@@ -40,6 +41,7 @@ export const GameCard = ({ game, ...rootDOMAttributes }) => {
                 </div>
             </div>
             <img 
+                onClick={() => onDownloadClick(game.name)}
                 className="game-card__download-btn"
                 src={downloadImg} 
                 alt="downloadButton" 

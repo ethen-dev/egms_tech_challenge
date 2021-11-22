@@ -22,9 +22,8 @@ export const Games = () => {
 
     const onTabClick = (name) => dispatch(setActiveCategory(name));
     const onInputChange = ({ target }) => dispatch(setCurrentSearchText(target.value));
-    const loadGameView = (name) => {
-        navigate(`../game/${name}`)
-    };
+    const loadGameView = (name) => navigate(`../game/${name}`);
+    const onDownloadClick = (name) => navigate(`../download/${name}`);
 
     const getFilteredGameList = gameList.filter(byCategory).filter(bySearchText);
 
@@ -52,7 +51,8 @@ export const Games = () => {
                         >
                             <GameCard 
                                 game={game} 
-                                onClick={() => loadGameView(game.name)}
+                                onDownloadClick={onDownloadClick}
+                                onGameClick={loadGameView}
                             />
                         </li>
                     ))
